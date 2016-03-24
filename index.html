@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edward</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="Pictures/favicon.ico">
+</head>
+<style>
+
+    
+    h1 {margin-bottom: 25px;}
+    
+    .jumbotron {
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    .row{margin-bottom: 30px;
+    margin-top: 30px;
+        z-index: 2;
+        position: relative;    
+    }
+    
+    video{
+        position: absolute;
+        top: 50%;    
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 1;
+        }    
+        
+    
+</style>
+
+<body>
+
+<div class="container">
+    
+    <video src="video/taustavideoiphone.mp4" autoplay loop></video>
+    
+</div>  
+  
+<!-- Otsikko -->
+<div class="container">
+   
+<div class="row">
+    
+     <div class="col-xs-12 jumbotron">
+        
+        <h1 align="center"> <font color="black"> <b>Edward</b><br><small>Kampaamon Toiminnanohjausjärjestelmä</small></font></h1>
+         
+     </div>
+</div>     
+     
+     <!-- Käyttöliittymä / aktiiviset painikkeet / navigointi -->
+<div class="jumbotron"> 
+    <div class="row">  
+     
+      <div class="col-xs-12 col-sm-4 col-lg-4"> 
+       
+        <div class="container">
+        
+         <button type="button" class="btn btn-lg btn-info" align="center" onclick="btn_ajanvaraus()"><image src="Pictures/frontpage/Calendartime.png"></image> Ajanvaraus</button>
+        </div>
+          
+      </div>
+      
+      <div class="col-xs-12 col-sm-4 col-lg-4"> 
+        
+         <div class="container">
+          <button type="button" class="btn btn-lg btn-info" onclick= window.location='palvelut.html'><image src="Pictures/frontpage/CUT.png"></image> Palvelut</button>
+         </div>
+          
+      </div>
+      
+      <div class="col-xs-12 col-sm-4 col-lg-4">
+         
+         <div class="container">
+          <button type="button" class="btn btn-lg btn-info"><image src="Pictures/frontpage/tablet.png"></image> Kirjanpito</button>
+         </div>
+         
+      </div>
+      
+    </div>  <!-- End First Row -->
+     
+     <div class="row">  
+     
+      <div class="col-xs-12 col-sm-4 col-lg-4"> 
+       
+        <div class="container">
+         <button type="button" class="btn btn-lg btn-info"><image src="Pictures/frontpage/calculator1.png"></image> Finanssit</button>
+        </div>
+          
+      </div>
+      
+      <div class="col-xs-12 col-sm-4 col-lg-4"> 
+         
+         <div class="container">
+          <button type="button" class="btn btn-lg btn-info"><image src="Pictures/frontpage/stat.png"> Raportointi</button>
+         </div>
+         
+      </div>
+      
+      <div class="col-xs-12 col-sm-4 col-lg-4">
+         
+         <div class="container">
+          <button type="button" class="btn btn-lg btn-info"><image src="Pictures/frontpage/HR.png"></image> Henkilöstö</button>
+         </div>
+         
+      </div>
+      
+    </div> <!-- End 2nd Row -->
+</div>   
+</div>
+   
+
+
+<!--Sivuston tarvitsemat javascriptit --> 
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/buttons.js"></script>
+       
+</body>
+</html>
